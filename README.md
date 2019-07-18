@@ -14,7 +14,7 @@ Before you need to store AWS credentials
 Then run application with secrets 
    
     #!/bin/bash
-    export SPRING_APPLICATION_JSON=`/opt/secrets/aws-secret-spring`
+    export SPRING_APPLICATION_JSON=`/opt/secrets/aws-secret-spring <myappname>`
     java -Dspring.application.json=SPRING_APPLICATION_JSON -jar myapp.jar
 
 
