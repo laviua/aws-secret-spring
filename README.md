@@ -11,10 +11,11 @@ Before you need to store AWS credentials
     AWS_ACCESS_KEY_ID=AKIAEXAMPLE;
     AWS_SECRET_ACCESS_KEY=dr6uMO2EXAMPLE
     
-Then run application with secrets 
+Then run application with secrets with optional parameter: app
+Secrets will be filtered by the tag - app
    
     #!/bin/bash
-    export SPRING_APPLICATION_JSON=`/opt/secrets/aws-secret-spring <myappname>`
+    export SPRING_APPLICATION_JSON=`/opt/secrets/aws-secret-spring <app>`
     java -Dspring.application.json=$SPRING_APPLICATION_JSON -jar myapp.jar
 
 

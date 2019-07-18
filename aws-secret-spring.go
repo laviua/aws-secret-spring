@@ -10,7 +10,11 @@ import (
 )
 
 func main() {
-	appname := os.Args[1]
+	appname := ""
+
+	if len(os.Args) > 1 {
+		appname = os.Args[1]
+	}
 
 	s := session.Must(session.NewSession())
 	sm := secretsmanager.New(s)
