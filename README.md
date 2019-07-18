@@ -12,6 +12,7 @@ Before you need to store AWS credentials
     AWS_SECRET_ACCESS_KEY=dr6uMO2EXAMPLE
     
 Then run application with secrets with optional parameter: app
+
 Secrets will be filtered by the tag - app
    
     #!/bin/bash
